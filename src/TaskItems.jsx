@@ -35,9 +35,9 @@ const TaskItems = ()=>{
         return (
             <Fragment>
                 <div className="d-flex justify-center text-center mt-3">
-                    <i onClick={handleSetAllDoneTask} className="fas fa-check text-success list-group-item d-flex justify-content-between"></i>
-                    <i onClick={handleSetAllNotDoneTask} className="fas fa-times text-warning me-3 list-group-item d-flex justify-content-between"></i>
-                    <i onClick={handleDeleteAllTask} className="fas fa-trash text-danger me-3 list-group-item d-flex justify-content-between"></i>
+                    <i onClick={handleSetAllDoneTask} className="fas fa-check pointer text-success list-group-item d-flex justify-content-between"></i>
+                    <i onClick={handleSetAllNotDoneTask} className="fas fa-times pointer text-warning me-3 list-group-item d-flex justify-content-between"></i>
+                    <i onClick={handleDeleteAllTask} className="fas fa-trash pointer text-danger me-3 list-group-item d-flex justify-content-between"></i>
                 </div>
                 <ul className="list-group m-0 p-0 mt-4">
                     {taskItems.map(task=>(
