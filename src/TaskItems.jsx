@@ -18,18 +18,18 @@ const TaskItems = ()=>{
         setTaskItems(newTask);
     };
     const handleDeleteAllTask = ()=>{
-       newTask = taskItems.filter((task)=>task.done !== true)
-       setTaskItems(newTask)
-    }
+       newTask = taskItems.filter((task)=>task.done !== true);
+       setTaskItems(newTask);
+    };
     const handleSetAllDoneTask = ()=>{
-        newTask = taskItems.filter((task)=>task.done = true)
-        setTaskItems(newTask)
-    }
+        newTask = taskItems.filter((task)=>task.done = true);
+        setTaskItems(newTask);
+    };
     const handleSetAllNotDoneTask = ()=>{
-        newTask = [...taskItems]
-        newTask.forEach(task=>task.done = false)
-        setTaskItems(newTask)
-    }
+        newTask = [...taskItems];
+        newTask.forEach(task=>task.done = false);
+        setTaskItems(newTask);
+    };
 
     if(taskItems.length){
         return (
