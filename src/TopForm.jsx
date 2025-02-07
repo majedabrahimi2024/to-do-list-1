@@ -19,12 +19,12 @@ const TopForm = ()=>{
     };
     return (
         <Fragment>
-            <h4 className="text-center text-info text_shadow">to do list
+            <h4 className="text-center text-info text_shadow">To Do List
             </h4>
             <form action="#" onSubmit={handleAddTask}>
                 <div className="form-group d-flex">
                     <input type="text" name="" id="" className="form-control" value={task} onChange={handleSetTask}/>
-                    <button type="submit" className="btn btn-success me-1">submit</button>
+                    <button type="submit" className="btn btn-success add-task me-1">Add Task</button>
                 </div>
             </form>
         </Fragment>
